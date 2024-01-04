@@ -46,8 +46,8 @@ router.post('/slist', function async(next) {
     this.body = {
       code: 0,
       data: [
-        { sid: 1, sname: '扣扣' },
-        { sid: 2, sname: '默默' },
+        { sid: 1, sname: '扣扣', cid: 1 },
+        { sid: 2, sname: '默默', cid: 1 },
       ],
       message: '',
     }
@@ -57,17 +57,17 @@ router.post('/slist', function async(next) {
     this.body = {
       code: 0,
       data: [
-        { sid: 3, sname: 'tx视频' },
-        { sid: 4, sname: 'aqiyi' },
+        { sid: 3, sname: 'tx视频', cid: 2 },
+        { sid: 4, sname: 'aqiyi', cid: 2 },
       ],
       message: '',
     }
     return
   }
   this.body = {
-    code:0,
-    data:[],
-    message:''
+    code: 0,
+    data: [],
+    message: '',
   }
   return
 })
